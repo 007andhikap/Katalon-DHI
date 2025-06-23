@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Das_001_Menampilkan_Halaman_Dashboard</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a53d1e16-1189-4db9-9407-753e485a12a8</testCaseGuid>
+</TestCaseEntity>

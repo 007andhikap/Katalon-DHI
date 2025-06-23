@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Sur_001_Menampilkan_Halaman_Surat_Masuk</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5528c631-b651-4513-82fa-e708f6e72225</testCaseGuid>
+</TestCaseEntity>

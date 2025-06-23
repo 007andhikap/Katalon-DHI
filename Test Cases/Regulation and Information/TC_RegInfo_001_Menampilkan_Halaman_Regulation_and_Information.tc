@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_RegInfo_001_Menampilkan_Halaman_Regulation_and_Information</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1290552f-1519-46d4-8b55-cc159222b179</testCaseGuid>
+</TestCaseEntity>

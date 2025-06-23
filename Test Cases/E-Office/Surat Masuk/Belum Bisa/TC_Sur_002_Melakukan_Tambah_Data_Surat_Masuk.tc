@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Sur_002_Melakukan_Tambah_Data_Surat_Masuk</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ee18293e-640f-4ecc-9a40-5e469ce973ae</testCaseGuid>
+</TestCaseEntity>

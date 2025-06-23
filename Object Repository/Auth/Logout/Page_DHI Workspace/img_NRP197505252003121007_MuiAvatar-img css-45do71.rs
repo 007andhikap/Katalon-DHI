@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_NRP197505252003121007_MuiAvatar-img css-45do71</name>
+   <tag></tag>
+   <elementGuidId>44c0e828-d362-4843-b2d9-74dc4ced809a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>img.MuiAvatar-img.css-45do71</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//img[@alt='image']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>291cd46d-4c01-4b43-87b1-a693c7496b04</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>image</value>
+      <webElementGuid>4180b376-0595-4340-9519-199c8569b39f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiAvatar-img css-45do71</value>
+      <webElementGuid>8db2fa84-ca51-4dea-80b6-01f4383ce78d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>https://i.ibb.co.com/S70gYR53/pngtree-casual-man-flat-design-avatar-profile-picture-vector-png-image-12593008.png</value>
+      <webElementGuid>dc837aca-7b7d-49de-b133-ad05bfe0438a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@class=&quot;mainwrapper css-hboir5&quot;]/header[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorDefault MuiAppBar-positionFixed mui-fixed css-co2hl6&quot;]/div[@class=&quot;MuiToolbar-root MuiToolbar-regular css-blizx5&quot;]/div[@class=&quot;MuiStack-root css-z4dzkh&quot;]/div[@class=&quot;MuiBox-root css-0&quot;]/button[@class=&quot;MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeLarge css-kdx36g&quot;]/div[@class=&quot;MuiAvatar-root MuiAvatar-circular css-1lnucgj&quot;]/img[@class=&quot;MuiAvatar-img css-45do71&quot;]</value>
+      <webElementGuid>1c26d3cc-85c4-4215-9c40-3d162d55a56f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='image']</value>
+      <webElementGuid>2305b82b-79a2-422e-9361-28277ce79dd1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button/div/img</value>
+      <webElementGuid>06c88198-7fb6-43e0-9964-b6c3cee29d0f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@alt = 'image' and @src = 'https://i.ibb.co.com/S70gYR53/pngtree-casual-man-flat-design-avatar-profile-picture-vector-png-image-12593008.png']</value>
+      <webElementGuid>ed8d2895-c4c0-4981-afa0-8c88c6880230</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

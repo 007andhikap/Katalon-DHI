@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_RegInfo_003_Melihat_Detail_Dokumen</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>eb347e6c-936f-42d2-8dc3-ceaf982fdeae</testCaseGuid>
+</TestCaseEntity>

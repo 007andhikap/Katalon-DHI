@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_SurKel_002_Melakukan_Tambah_Data_Surat_Keluar</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>702a7d83-7600-4559-b43a-eb8dcce7caa6</testCaseGuid>
+</TestCaseEntity>

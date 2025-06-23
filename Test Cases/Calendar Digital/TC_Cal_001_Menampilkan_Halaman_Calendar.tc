@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Cal_001_Menampilkan_Halaman_Calendar</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c5bcb390-c004-4e00-b72b-f79fda3d34f5</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_WELCOME</name>
+   <tag></tag>
+   <elementGuidId>ba4c7348-13b1-4168-a382-3cf960f3c29a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>p.MuiTypography-root.MuiTypography-body1.css-fthkha</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='DHI Workspace'])[2]/following::p[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>3c294cd2-7186-4890-a0eb-ba2411b61b50</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root MuiTypography-body1 css-fthkha</value>
+      <webElementGuid>544289be-75a3-4184-a5c7-107524b4b11a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>WELCOME</value>
+      <webElementGuid>97c2453b-9dea-4f82-b588-c878e80f15bf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@class=&quot;mainwrapper css-hboir5&quot;]/div[@class=&quot;page-wrapper css-3hl8as&quot;]/div[@class=&quot;MuiBox-root css-v2kfba&quot;]/div[@class=&quot;MuiBox-root css-10klw3m&quot;]/div[@class=&quot;MuiBox-root css-0&quot;]/div[1]/div[@class=&quot;MuiBox-root css-tkh2ux&quot;]/div[@class=&quot;MuiBox-root css-1i357gv&quot;]/div[@class=&quot;MuiBox-root css-yhhxbs&quot;]/p[@class=&quot;MuiTypography-root MuiTypography-body1 css-fthkha&quot;]</value>
+      <webElementGuid>5feb0207-4006-463d-90c0-23720a9e44ba</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DHI Workspace'])[2]/following::p[2]</value>
+      <webElementGuid>24cae2e7-3009-410b-b125-f23e0f82f2d8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='My Profile'])[1]/preceding::p[14]</value>
+      <webElementGuid>82ed44d3-860d-4c93-b09b-c59ee78a51d9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='My Account'])[1]/preceding::p[14]</value>
+      <webElementGuid>a1a3992a-0303-4e92-87ff-957526831b47</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='WELCOME']/parent::*</value>
+      <webElementGuid>7ea83345-2282-40d0-85b3-ec608906a3eb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/p</value>
+      <webElementGuid>5739bae6-fae2-4f41-a026-f4399b53a1d0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'WELCOME' or . = 'WELCOME')]</value>
+      <webElementGuid>25129dc5-4366-4f69-8d78-f57790b0b9e9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

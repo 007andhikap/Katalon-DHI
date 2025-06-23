@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Cal_005_Menampilkan_Halaman_Calendar_Digital_Berdasarkan_Years</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cc96b985-3003-493c-862b-bccf86bd82ce</testCaseGuid>
+</TestCaseEntity>

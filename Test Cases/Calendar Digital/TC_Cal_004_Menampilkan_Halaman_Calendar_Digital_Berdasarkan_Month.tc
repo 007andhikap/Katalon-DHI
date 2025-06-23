@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Cal_004_Menampilkan_Halaman_Calendar_Digital_Berdasarkan_Month</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bdcd853e-9613-4396-aca0-79469a13ca96</testCaseGuid>
+</TestCaseEntity>

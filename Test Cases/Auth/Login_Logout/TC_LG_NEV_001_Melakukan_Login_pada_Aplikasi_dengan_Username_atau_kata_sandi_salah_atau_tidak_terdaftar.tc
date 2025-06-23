@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LG_NEV_001_Melakukan_Login_pada_Aplikasi_dengan_Username_atau_kata_sandi_salah_atau_tidak_terdaftar</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>539c6ea4-51bd-4afe-8d76-54d4e3cc9eec</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Cht_001_Menampilkan_Halaman_Chat</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>db6578b7-4573-4f19-900d-18edeab4c27c</testCaseGuid>
+</TestCaseEntity>

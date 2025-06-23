@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LG_001_Melakukan_Login_Pada_Aplikasi</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>67ef0ee8-52be-4a40-a527-bf99bd3b5f5e</testCaseGuid>
+</TestCaseEntity>

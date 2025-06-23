@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Dis_001_Menampilkan_Halaman_Disposisi</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6aeacf7d-2f07-41f3-a3cb-19eee9375808</testCaseGuid>
+</TestCaseEntity>

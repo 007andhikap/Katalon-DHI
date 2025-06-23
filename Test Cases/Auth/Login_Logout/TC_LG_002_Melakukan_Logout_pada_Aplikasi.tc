@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LG_002_Melakukan_Logout_pada_Aplikasi</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c44a5990-165b-4777-94bf-90c7067d62c5</testCaseGuid>
+</TestCaseEntity>

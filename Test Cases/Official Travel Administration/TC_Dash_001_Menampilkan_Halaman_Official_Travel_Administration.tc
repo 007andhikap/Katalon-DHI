@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Dash_001_Menampilkan_Halaman_Official_Travel_Administration</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>62b3213f-b325-4880-b800-cd1addeb863e</testCaseGuid>
+</TestCaseEntity>

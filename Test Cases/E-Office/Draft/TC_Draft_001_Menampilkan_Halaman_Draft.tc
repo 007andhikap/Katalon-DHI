@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Draft_001_Menampilkan_Halaman_Draft</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3d5adb9e-0f49-415c-87ee-1f644ab17880</testCaseGuid>
+</TestCaseEntity>

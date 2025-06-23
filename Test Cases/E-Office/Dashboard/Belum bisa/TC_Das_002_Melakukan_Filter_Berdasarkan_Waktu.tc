@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Das_002_Melakukan_Filter_Berdasarkan_Waktu</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9adc50cc-6507-4aaf-8582-dd0538746342</testCaseGuid>
+</TestCaseEntity>

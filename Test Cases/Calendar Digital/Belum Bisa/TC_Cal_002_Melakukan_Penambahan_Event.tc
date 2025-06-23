@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Cal_002_Melakukan_Penambahan_Event</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>40f8558a-7489-4882-b4be-04cd44576e5b</testCaseGuid>
+</TestCaseEntity>
