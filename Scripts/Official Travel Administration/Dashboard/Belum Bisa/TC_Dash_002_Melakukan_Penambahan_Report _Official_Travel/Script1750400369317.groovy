@@ -12,7 +12,7 @@ boolean finalCloseBrowser = binding.hasVariable('closeBrowserAfter') ? closeBrow
 
 // Step 1: Panggil test case untuk menampilkan halaman Regulation & Information
 WebUI.callTestCase(
-    findTestCase('Test Cases/Official Travel Administration/TC_Dash_001_Menampilkan_Halaman_Official_Travel_Administration'), 
+    findTestCase('Test Cases/Official Travel Administration/Dashboard/TC_Dash_001_Menampilkan_Halaman_Official_Travel_Administration'), 
     [
         'closeBrowserAfter': false
     ], 
