@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Letter_002_Menambahkan_Letter_Support_of_Data</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ddee7774-079d-484f-8dc5-856d3ba18545</testCaseGuid>
+</TestCaseEntity>

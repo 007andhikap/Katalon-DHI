@@ -17,7 +17,7 @@ boolean finalCloseBrowser = binding.hasVariable('closeBrowserAfter') ? closeBrow
 
 // Step 1: Buka halaman Visitor Data
 WebUI.callTestCase(
-    findTestCase('Test Cases/Visitor Management/Visitor Data/TC_VisitD_001_Menampilkan_Halaman_Visitor_Data'),
+    findTestCase('Test Cases/Visitor Management/Letter Support of Data/TC_Letter_001_Menampilkan_Halaman_Letter_Support_of_Data'),
     ['closeBrowserAfter': false],
     FailureHandling.STOP_ON_FAILURE
 )
@@ -41,7 +41,7 @@ WebUI.scrollToElement(NamaDetailLink, 2)
 
 try {
 	WebUI.click(NamaDetailLink)
-	WebUI.comment("Klik berhasil pada link DINAS baris pertama.")
+	WebUI.comment("Klik berhasil pada link Nama baris pertama.")
 } catch (Exception e) {
 	WebElement el = WebUiCommonHelper.findWebElement(NamaDetailLink, 10)
 	WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(el))
@@ -53,7 +53,7 @@ TestObject detailTitle = new TestObject('detailTitle')
 detailTitle.addProperty(
 	'xpath',
 	ConditionType.EQUALS,
-	"//p[contains(@class, 'MuiTypography-body1') and contains(text(),'Detail Visitor Data Registration')]"
+	"//p[contains(@class, 'MuiTypography-body1') and contains(text(),'Detail Application Letter')]"
 )
 
 WebUI.waitForElementVisible(detailTitle, 15)

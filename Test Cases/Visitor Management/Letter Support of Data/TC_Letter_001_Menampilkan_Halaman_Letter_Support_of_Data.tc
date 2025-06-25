@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Letter_001_Menampilkan_Halaman_Letter_Support_of_Data</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2241d30b-abeb-47f7-acb7-6a532cb0491d</testCaseGuid>
+</TestCaseEntity>

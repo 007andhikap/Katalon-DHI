@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Letter_003_Melihat_Detail_Letter_Support_of_Data</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dcec1f52-67e9-4a73-854a-e0e5e19246e6</testCaseGuid>
+</TestCaseEntity>
