@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Dash_002_Pembuatan_Visitor_Registration_pada_Dashboard</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3fd7eb4c-793d-4a9b-a7fc-64927b85ded4</testCaseGuid>
+</TestCaseEntity>

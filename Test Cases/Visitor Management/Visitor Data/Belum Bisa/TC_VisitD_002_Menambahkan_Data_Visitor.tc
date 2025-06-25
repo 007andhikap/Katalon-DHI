@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_VisitD_002_Menambahkan_Data_Visitor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>98b3b39f-44c8-4dcb-82f8-f2026528a95c</testCaseGuid>
+</TestCaseEntity>

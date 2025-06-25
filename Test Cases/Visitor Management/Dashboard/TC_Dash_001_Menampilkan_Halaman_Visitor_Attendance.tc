@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Dash_001_Menampilkan_Halaman_Visitor_Attendance</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1321e58-ce56-49a0-b7b7-68b7b0d9b9de</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Dash_003_Pembuatan_Application_Letter_Of_Support_pada_Dashboard</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>202d42ae-57d1-450a-990b-71177e42d533</testCaseGuid>
+</TestCaseEntity>
