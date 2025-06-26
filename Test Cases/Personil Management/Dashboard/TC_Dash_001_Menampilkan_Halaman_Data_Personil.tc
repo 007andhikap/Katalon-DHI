@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Data Personel_001</name>
+   <name>TC_Dash_001_Menampilkan_Halaman_Data_Personil</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>971f5c80-65db-4812-9840-b59c324d3aa7</testCaseGuid>
+   <testCaseGuid>04beaa0f-3ac7-4e16-a85b-1ee9830d75f8</testCaseGuid>
 </TestCaseEntity>

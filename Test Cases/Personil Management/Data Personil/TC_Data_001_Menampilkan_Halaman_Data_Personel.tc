@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Data_001_Menampilkan_Halaman_Data_Personel</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>45a88fae-9dc0-4db6-b579-3f444c211d21</testCaseGuid>
+</TestCaseEntity>

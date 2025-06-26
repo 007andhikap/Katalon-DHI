@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Dash_002_Menampilkan_Halaman_Detail_Data_Personil</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8ecf989e-20af-438f-a879-b61aeac834bf</testCaseGuid>
+</TestCaseEntity>

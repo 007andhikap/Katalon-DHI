@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Data_003__Melihat_Detail_Data_Pegawai</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>800acc65-decd-490d-8656-42e5d1836c44</testCaseGuid>
+</TestCaseEntity>
