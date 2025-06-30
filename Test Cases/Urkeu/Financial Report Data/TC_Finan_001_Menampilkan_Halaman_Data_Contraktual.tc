@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Finan_001_Menampilkan_Halaman_Data_Contraktual</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>932b5e47-6fdf-4166-979c-68150406c1c5</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Dash_002_Menampilkan_Halaman_Detail_Pagu_dan_Realisasi</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d28df103-b813-4eaf-893a-51979415972f</testCaseGuid>
+</TestCaseEntity>

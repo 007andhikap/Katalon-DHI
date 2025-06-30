@@ -10,30 +10,33 @@ boolean finalCloseBrowser = binding.hasVariable('closeBrowserAfter') ? closeBrow
 
 
 // Step 1: Panggil test case dashboard
-WebUI.callTestCase(findTestCase('Auth/Login_Logout/TC_LG_001_Melakukan_Login_Pada_Aplikasi'), [
-  'nip': '197505252003121007',
-  'password': 'fzqqY0qJjYTuJiVJRZh4ag==',
-  'closeBrowserAfter': false
-], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(
+    findTestCase('Test Cases/Urkeu/Dashboard/TC_Dash_001_Menampilkan_Halaman_Dashboard_URKEU'), 
+    [
+        'closeBrowserAfter': false
+    ], 
+    FailureHandling.STOP_ON_FAILURE
+)
 
-TestObject calendarApps = new TestObject('calendarApps')
-calendarApps.addProperty(
-	'xpath', 
-	ConditionType.EQUALS, 
-	"//a[@href='/digital-calendar' and .//p[text()='Calendar']]")
+//pilih menu berdasarkan href
+def klikLinkBerdasarkanHref(String hrefPartial) {
+    TestObject link = new TestObject()
+    link.addProperty("xpath", ConditionType.EQUALS, "//a[contains(@href, '${hrefPartial}')]")
+    WebUI.waitForElementClickable(link, 10)
+    WebUI.click(link)
+}
 
-WebUI.waitForElementClickable(calendarApps, 10)
-WebUI.click(calendarApps)
+klikLinkBerdasarkanHref("/administrasi-urkeu/financial-report-data")
 
 // Step 3: Verifikasi halaman muncul
 // Membuat TestObject secara dinamis
-TestObject DigitalCal = new TestObject('DigitalCal')
-DigitalCal.addProperty('xpath', 
+TestObject Finan = new TestObject('Finan')
+Finan.addProperty('xpath', 
 	ConditionType.EQUALS, 
-	"//span[text()='Agenda Kegiatan' and contains(@class, 'MuiTypography-caption')]")
+	"//p[text()='CONTRAKTUAL' and contains(@class, 'MuiTypography-body1')]")
 
 // Verifikasi bahwa elemen muncul
-WebUI.verifyElementPresent(DigitalCal, 10)
+WebUI.verifyElementPresent(Finan, 10)
 
 // Step 4: Tutup browser
 if (finalCloseBrowser) {

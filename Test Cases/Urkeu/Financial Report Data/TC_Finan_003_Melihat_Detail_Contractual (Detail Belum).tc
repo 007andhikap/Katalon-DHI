@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Finan_003_Melihat_Detail_Contractual (Detail Belum)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>037e8de7-098c-49ea-875d-58132a03412c</testCaseGuid>
+</TestCaseEntity>

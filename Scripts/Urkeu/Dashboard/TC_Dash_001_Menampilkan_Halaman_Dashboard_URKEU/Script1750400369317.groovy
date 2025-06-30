@@ -16,24 +16,24 @@ WebUI.callTestCase(findTestCase('Auth/Login_Logout/TC_LG_001_Melakukan_Login_Pad
   'closeBrowserAfter': false
 ], FailureHandling.STOP_ON_FAILURE)
 
-TestObject calendarApps = new TestObject('calendarApps')
-calendarApps.addProperty(
+TestObject UrkeuApps = new TestObject('UrkeuApps')
+UrkeuApps.addProperty(
 	'xpath', 
 	ConditionType.EQUALS, 
-	"//a[@href='/digital-calendar' and .//p[text()='Calendar']]")
+	"//a[@href='/administrasi-urkeu/dashboard' and .//p[text()='Urkeu']]")
 
-WebUI.waitForElementClickable(calendarApps, 10)
-WebUI.click(calendarApps)
+WebUI.waitForElementClickable(UrkeuApps, 10)
+WebUI.click(UrkeuApps)
 
 // Step 3: Verifikasi halaman muncul
 // Membuat TestObject secara dinamis
-TestObject DigitalCal = new TestObject('DigitalCal')
-DigitalCal.addProperty('xpath', 
+TestObject Urkeu = new TestObject('Urkeu')
+Urkeu.addProperty('xpath', 
 	ConditionType.EQUALS, 
-	"//span[text()='Agenda Kegiatan' and contains(@class, 'MuiTypography-caption')]")
+	"//span[text()='Urkeu' and contains(@class, 'MuiTypography-caption')]")
 
 // Verifikasi bahwa elemen muncul
-WebUI.verifyElementPresent(DigitalCal, 10)
+WebUI.verifyElementPresent(Urkeu, 10)
 
 // Step 4: Tutup browser
 if (finalCloseBrowser) {

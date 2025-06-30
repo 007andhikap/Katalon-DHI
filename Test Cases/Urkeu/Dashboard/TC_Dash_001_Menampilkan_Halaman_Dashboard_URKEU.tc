@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Dash_001_Menampilkan_Halaman_Dashboard_URKEU</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6cf7b6b9-dbf4-4017-b0b6-037f27a500f6</testCaseGuid>
+</TestCaseEntity>
