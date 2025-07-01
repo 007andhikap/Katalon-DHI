@@ -29,43 +29,53 @@ def klikLinkBerdasarkanHref(String hrefPartial) {
 
 klikLinkBerdasarkanHref("/administrasi-urkeu/financial-report-data")
 
-// Step 3: Verifikasi halaman muncul
-TestObject Finan = new TestObject('Finan')
-Finan.addProperty('xpath', 
-    ConditionType.EQUALS, 
-    "//p[text()='CONTRAKTUAL' and contains(@class, 'MuiTypography-body1')]"
-)
-WebUI.verifyElementPresent(Finan, 10)
-
-// Step 4: Klik tombol Detail baris pertama
-TestObject dinasDetailButton = new TestObject('dinasDetailButton')
-dinasDetailButton.addProperty(
+TestObject dinasDetailLink = new TestObject('dinasDetailLink')
+dinasDetailLink.addProperty(
     'xpath',
     ConditionType.EQUALS,
-    "(//button[contains(., 'Detail')])[1]" // XPath disederhanakan agar lebih fleksibel
+    "//table//tr[1]//a[contains(text(), 'Detail')]"
 )
 
-// Tambahkan delay untuk memastikan halaman sudah render
-WebUI.delay(2)
+WebUI.waitForElementPresent(dinasDetailLink, 10)
+WebUI.delay(1)
+WebUI.scrollToElement(dinasDetailLink, 2)
 
-// Cek jumlah tombol yang ditemukan
-List<WebElement> tombolList = WebUiCommonHelper.findWebElements(dinasDetailButton, 10)
-WebUI.comment("Jumlah tombol 'Detail' ditemukan: " + tombolList.size())
+WebElement el = WebUiCommonHelper.findWebElement(dinasDetailLink, 10)
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(el))
+WebUI.comment("Klik berhasil menggunakan JavaScript.")
 
-if (tombolList.size() == 0) {
-    WebUI.comment("❌ Tidak ditemukan tombol 'Detail'. Cek apakah data tabel sudah dimuat.")
-} else {
-    WebUI.scrollToElement(dinasDetailButton, 2)
+WebUI.delay(5)
 
-    try {
-        WebUI.click(dinasDetailButton)
-        WebUI.comment("✅ Klik berhasil pada tombol Detail baris pertama.")
-    } catch (Exception e) {
-        WebElement el = WebUiCommonHelper.findWebElement(dinasDetailButton, 10)
-        WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(el))
-        WebUI.comment("⚠️ Klik fallback berhasil menggunakan JavaScript.")
-    }
+// Buat TestObject dinamis (Konfirmasi yes enable)
+def yesEnableButton = new TestObject('YesEnableButton')
+yesEnableButton.addProperty(
+	'xpath',
+	ConditionType.EQUALS,
+	"//button[normalize-space()='Yes, Enable']"
+)
+
+// Tunggu dan klik
+WebUI.waitForElementVisible(yesEnableButton, 10)
+WebUI.waitForElementClickable(yesEnableButton, 10)
+WebUI.scrollToElement(yesEnableButton, 2)
+WebUI.click(yesEnableButton)
+
+// Fungsi untuk membuat TestObject teks berdasarkan teks <p>
+def buatTextElement(String isiTeks) {
+	def testObj = new TestObject("text_${isiTeks}")
+	testObj.addProperty(
+		"xpath",
+		ConditionType.EQUALS,
+		"//p[normalize-space()='${isiTeks}']"
+	)
+	return testObj
 }
+
+// Contoh penggunaan:
+def detailContractualText = buatTextElement("Detail Contractual")
+
+WebUI.waitForElementVisible(detailContractualText, 10)
+WebUI.verifyElementPresent(detailContractualText, 10)
 
 // Step 5: Tutup browser jika diinstruksikan
 if (finalCloseBrowser) {
