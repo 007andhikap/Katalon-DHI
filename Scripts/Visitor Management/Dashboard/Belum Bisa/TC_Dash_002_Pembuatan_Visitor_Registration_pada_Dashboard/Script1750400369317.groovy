@@ -7,6 +7,15 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import org.openqa.selenium.WebElement
 import com.kms.katalon.core.configuration.RunConfiguration
 import java.util.Arrays
+import helpers.LinkHelper
+import helpers.Konfirmasi
+import helpers.InputHelper
+import helpers.DropdownHelper
+import helpers.TextAreaLabel
+import helpers.UploadDocHelper
+import helpers.Scrollhelper
+import helpers.VerifikasiTeks
+import helpers.IsiFormTanggal
 
 boolean finalCloseBrowser = binding.hasVariable('closeBrowserAfter') ? closeBrowserAfter : true
 
@@ -17,87 +26,43 @@ WebUI.callTestCase(
     FailureHandling.STOP_ON_FAILURE
 )
 
-// Step 2: Klik tombol Visitor Registration
-TestObject btnRegis = new TestObject('btnRegis')
-btnRegis.addProperty('xpath', ConditionType.EQUALS, "//button[normalize-space(text())='Visitor Registration']")
-WebUI.waitForElementClickable(btnRegis, 10)
-try {
-    WebUI.click(btnRegis)
-} catch (Exception e) {
-    WebElement el = WebUiCommonHelper.findWebElement(btnRegis, 10)
-    WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(el))
-}
+// Klik tombol Tambah Data
+LinkHelper.TombolHref("/kunjungan-tamu/visitor-data/create")
+WebUI.delay(5)
 
-// Step 3: Verifikasi form
-TestObject pTambahData = new TestObject('pTambahData')
-pTambahData.addProperty('xpath', ConditionType.EQUALS, "//p[contains(@class, 'MuiTypography-body1') and text()='Visitor Registration Form']")
-WebUI.verifyElementPresent(pTambahData, 10)
+// Step 3: Verifikasi halaman muncul
+VerifikasiTeks.verifyTextElementVisible("Visitor Registration Form")
 
 // Step 4: Isi field teks
-def isiTextField(String placeholder, String value) {
-    TestObject inputField = new TestObject()
-    inputField.addProperty('xpath', ConditionType.EQUALS, "//input[@placeholder='${placeholder}']")
-    WebUI.waitForElementVisible(inputField, 10)
-    WebUI.setText(inputField, value)
-}
+InputHelper.isiTextField('Masukan Asal Delegasi', 'Dinas Kominfo')
+InputHelper.isiTextField('Masukan Tujuan', 'Amerika')
+InputHelper.isiTextField('Masukan Jabatan', 'Sesdit')
+InputHelper.isiTextField('Masukan Status Keanggotaan', 'Sesdit')
+InputHelper.isiTextField('Masukan nama pejabat yang menerima', 'Samsudin')
 
-isiTextField('Masukan Asal Delegasi', 'Dinas Kominfo')
-isiTextField('Masukan Tujuan', 'Amerika')
-isiTextField('Masukan Jabatan', 'Sesdit')
-isiTextField('Masukan Status Keanggotaan', 'Sesdit')
-isiTextField('Masukan nama pejabat yang menerima', 'Samsudin')
+// Untuk input pertama (Start Date)
+IsiFormTanggal.isiDate("Waktu Kunjungan", "07", "02", "2025", 1)
 
-// Step 5: Isi tanggal Start
-TestObject inputTanggal1 = new TestObject('inputTanggalStart')
-inputTanggal1.addProperty('xpath', ConditionType.EQUALS, "(//input[contains(@class, 'MuiPickersInputBase-input')])[1]")
-WebElement tanggalElement1 = WebUiCommonHelper.findWebElement(inputTanggal1, 10)
-WebUI.executeJavaScript("arguments[0].value='07/30/2025'; arguments[0].dispatchEvent(new Event('input'));", Arrays.asList(tanggalElement1))
-assert WebUI.getAttribute(inputTanggal1, 'value') == "07/30/2025"
+// Untuk input kedua (End Date)
+IsiFormTanggal.isiDate("Waktu Kunjungan", "07", "05", "2025", 2)
 
-// Step 6: Isi tanggal End
-TestObject inputTanggal2 = new TestObject('inputTanggalEnd')
-inputTanggal2.addProperty('xpath', ConditionType.EQUALS, "(//input[contains(@class, 'MuiPickersInputBase-input')])[2]")
-WebElement tanggalElement2 = WebUiCommonHelper.findWebElement(inputTanggal2, 10)
-WebUI.executeJavaScript("arguments[0].value='08/25/2025'; arguments[0].dispatchEvent(new Event('input'));", Arrays.asList(tanggalElement2))
-assert WebUI.getAttribute(inputTanggal2, 'value') == "08/25/2025"
-
-// Step 7: Isi Perihal
-TestObject inputPerihal = new TestObject('inputPerihal')
-inputPerihal.addProperty('xpath', ConditionType.EQUALS, "//p[contains(text(),'Perihal')]/following::textarea[1]")
-WebUI.setText(inputPerihal, "Surat Undangan Dinas Luar Kota")
+// Fungsi isi textarea berdasarkan label
+TextAreaLabel.isiTextareaBerdasarkanLabel("Perihal", "Ini adalah keterangan perjalanan dinas.")
 
 // Step 8: Contact Person
-isiTextField('Masukan Nama', 'Dedi Mulyadi')
-isiTextField('Masukan No Telp', '081723782382')
+InputHelper.isiTextField('Masukan Nama', 'Dedi Mulyadi')
+InputHelper.isiTextField('Masukan No Telp', '081723782382')
 
-// Step 9: Scroll ke bagian Upload Dokumen
-TestObject labelUploadDokumen = new TestObject("labelUploadDokumen")
-labelUploadDokumen.addProperty("xpath", ConditionType.EQUALS, "//p[contains(text(),'Id Card / Passpor')]")
-WebElement uploadLabelElement = WebUiCommonHelper.findWebElement(labelUploadDokumen, 10)
-WebUI.executeJavaScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", Arrays.asList(uploadLabelElement))
-WebUI.delay(1)
+// ✅ Fungsi diperbaiki: scroll + verifikasi teks fleksibel
+Scrollhelper.scrollKeElemenDenganTeks("p", "Upload Dokumen")
+WebUI.delay(3)
 
-// Step 10: Fungsi Upload
-def uploadDokumen(String namaInput, String pathFile) {
-    File file = new File(pathFile)
-    assert file.exists() : "❌ File tidak ditemukan: ${pathFile}"
-    
-    TestObject fileInput = new TestObject("fileUpload_" + namaInput)
-    fileInput.addProperty("xpath", ConditionType.EQUALS, "//input[@type='file' and @name='${namaInput}']")
-    WebUI.waitForElementVisible(fileInput, 10)
-    WebUI.uploadFile(fileInput, file.getAbsolutePath())
 
-    // Verifikasi nama file
-    TestObject uploadedFileLabel = new TestObject("uploadedFile_" + namaInput)
-    uploadedFileLabel.addProperty("xpath", ConditionType.EQUALS, "//*[text()='${file.getName()}']")
-    WebUI.verifyElementPresent(uploadedFileLabel, 10)
-    WebUI.comment("✅ File '${file.getName()}' berhasil diupload pada '${namaInput}'")
-}
-
-// Step 11: Upload file
+// Fungsi upload dokumen berdasarkan label
 String pathPDF = RunConfiguration.getProjectDir() + "/Data Files/dummy.pdf"
-uploadDokumen("surat_tugas", pathPDF)
-uploadDokumen("idcard", pathPDF)
+UploadDocHelper.uploadDokumen("Surat Tugas", pathPDF)
+UploadDocHelper.uploadDokumen("Id Card / Passpor", pathPDF)
+
 
 // Step 12: Checklist Disclaimer
 TestObject checkboxDisclaimer = new TestObject('checkboxDisclaimer')

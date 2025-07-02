@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Finan_006_Melihat_Detail_Non_Contractual</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0453fdcc-95c1-4dfe-a0b0-a84a27181bbf</testCaseGuid>
+</TestCaseEntity>

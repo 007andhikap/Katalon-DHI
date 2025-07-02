@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_Finan_002_Melakukan_Penambahan_Data_Contraktual</name>
+   <name>TC_Finan_005_Melakukan_Penambahan_Data_Non_Contraktual</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>eda2e134-de73-479d-beb2-71eaa13c411e</testCaseGuid>
+   <testCaseGuid>71acd2ae-5447-4284-8d79-d76d86ea1232</testCaseGuid>
 </TestCaseEntity>

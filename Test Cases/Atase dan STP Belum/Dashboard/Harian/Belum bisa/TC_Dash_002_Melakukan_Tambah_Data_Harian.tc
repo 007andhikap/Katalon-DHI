@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Dash_002_Melakukan_Tambah_Data_Harian</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4c7d28ea-a08f-46d6-bbc4-d0aaf073e075</testCaseGuid>
+</TestCaseEntity>
